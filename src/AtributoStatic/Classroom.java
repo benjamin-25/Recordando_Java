@@ -1,13 +1,14 @@
-package Static;
+package AtributoStatic;
 
 public class Classroom {
     /* atributo de instancia, depende de que exista una instancia u objeto de la clase Classroom
     es decir estara disponible en cada instancia si esta existe*/
     private String studentName;
 
-    /*atributo de clase, estara compartida en todas las instancias de la clase sin depender
-     de que exista una instancia, (el nombre del colegio de un salon deberia ser el mismo por eso se define como estatico, puede cambiar
-     por lo que  no se define final para constantes)*/
+    /*atributo de clase, estara compartida en todas las instancias de la clase,
+    y no se puede modificar de forma independiente, (el nombre del colegio de un salon deberia
+     ser el mismo por eso se define como estatico, puede cambiar
+     por lo que no se define final para constantes)*/
     private static String schoolName = "Institucion Educativa N^1";
 
     public Classroom(String studentName) {
